@@ -6,7 +6,9 @@ if (dayOfWeek === 0) {
     dayOfWeek = 7; }
 for (let i = 0; i < week.length; i++){
     if (i === dayOfWeek - 1){
-        document.body.insertAdjacentHTML("beforeend", "<div><i>" + week[i] + "<i></div>");}
+        document.write(week[i].bold());
+    }
     else{
-        document.body.insertAdjacentHTML("beforeend", "<div>" + week[i] + "</div>");}
+        document.write(week[i]);
+    }
 }
