@@ -7,27 +7,14 @@
 //}
 
 //document.writeln(result);  // [php,css,script,html,java]
-let arr = ["php", "php", "css", "css", "script", "script", "html", "html", "java"];
-function removeDuplicates(arr) {
+let array = ["php", "php", "css", "css", "script", "script", "html", "html", "java"];
+function removeDuplicates(array) {
     let empty = [];
-    for (let i = 0; i < arr.length; i++) {
-        let e = arr[i];
+    for (let i = 0; i < array.length; i++) {
+        let e = array[i];
         if (empty.indexOf(e) === -1)
         empty.push(e);
     }
     return empty;
 }
-document.write(removeDuplicates(arr));
-
-
-let arr = ["php", "php", "css", "css", "script", "script", "html", "html", "java"];
-function removeDuplicates(arr) {
-    let empty = [];
-    for (let i = 0; i < arr.length; i++) {
-        let e = arr[i];
-        if (empty.indexOf(e) === -1)
-            empty.push(e);
-    }
-    return empty;
-}
-let result = document.write(removeDuplicates(arr));
+document.write(removeDuplicates(array));
