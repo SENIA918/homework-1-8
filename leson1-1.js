@@ -5,5 +5,6 @@ let obj = {
             Киев:'Украина'
 };
 for (let key in obj){
-    alert(key + ' - это ' + obj[key] + ',');
+    document.write(key + ' - это ' + obj[key] + ',');
 }
+
