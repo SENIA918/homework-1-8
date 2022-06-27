@@ -3,19 +3,14 @@
 
     let array1 = [5, 2, 1, -10, 8];
     let array2 = [5, 2, 1, -9, 3, 7];
-    let union = function(array1, array2) {
+         function union() {
         let array3 = [];
         let arr = array1.concat(array2);
-        let len = arr.length;
-        let obj = {};
-        while(len--) {
-            let itm = arr[len];
-            if(!obj[itm]) {
-                array3.unshift(itm);
-                obj[itm] = true;
-            }
+        for (let i = 0; i < arr.length; i++) {
+            let e = arr[i];
+            if (array3.indexOf(e) === -1)
+            array3.push(e);
         }
         return array3;
-    };
-
-    document.writeln(union(array1, array2)); // [-10,8,5,2,1,-9,3,7]
+    }
+    document.write(union());
